@@ -1,0 +1,1 @@
+Describe in detail all different objects do you see including the surfaces. Create a list with each of the objects including its name, a brief description a description you will provide stable diffusion to create an image of that object and a description you will provide to text to 3d AI such as luma ai

@@ -1,0 +1,439 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (3.4841865158072443, 67.25830757513997, 50000)
+                double radius = 89.5705078125
+            }
+            dictionary Perspective = {
+                double3 position = (95.7455669893473, 162.0001095394487, 28.353237295107185)
+                double3 target = (-425.5666161688834, -568.6513408269349, -267.2814706852726)
+            }
+            dictionary Right = {
+                double3 position = (-50000, 68.4746992825574, -4.043200324563396)
+                double radius = 102.23522338867187
+            }
+            dictionary Top = {
+                double3 position = (0, 50000, 0)
+                double radius = 500
+            }
+            string boundCamera = "/World/cameras/Camera"
+        }
+        dictionary metricsAssembler = {
+            dictionary "/World/CuttingBoardB" = {
+            }
+            dictionary "/World/GrilledTunaMelt" = {
+            }
+            dictionary "/World/GrilledTunaMelt_01" = {
+            }
+            dictionary "/World/WoodenTable" = {
+            }
+            dictionary "/World/props/CokeBottleA" = {
+            }
+            dictionary "/World/props/CuttingBoardB" = {
+            }
+            dictionary "/World/props/GrilledTunaMelt" = {
+            }
+            dictionary "/World/props/GrilledTunaMelt_01" = {
+            }
+            dictionary "/World/props/WoodenTable" = {
+            }
+            dictionary "/World/props/WoodenTable/GrilledTunaMelt" = {
+            }
+            dictionary "/World/props/cutting_board_rig/CuttingBoardA" = {
+            }
+            dictionary "/World/props/cutting_board_rig/CuttingBoardB" = {
+            }
+            dictionary "/World/props/cutting_board_rig/GrilledTunaMelt_01" = {
+            }
+            int version = 1
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./CokeBackplateA.usda"
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_position" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_reflectivity" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_rotation_axis" = (3.4028235e38, 3.4028235e38, 3.4028235e38)
+            int "rtx:pathtracing:multimatte:channel0" = 1
+            int "rtx:pathtracing:multimatte:channel1" = 2
+            int "rtx:pathtracing:multimatte:channel2" = 3
+            int "rtx:pathtracing:multimatte:channel3" = 4
+            int "rtx:pathtracing:multimatte:channel4" = 5
+            int "rtx:pathtracing:multimatte:channelCount" = 5
+            int "rtx:pathtracing:totalSpp" = 64
+            bool "rtx:pathtracing:zDepthAOV" = 1
+            double "rtx:pathtracing:zDepthMax" = -10
+            double "rtx:pathtracing:zDepthMin" = 100
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            double "rtx:post:lensFlares:flareScale" = 0.075
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            token "rtx:rendermode" = "PathTracing"
+            float3 "rtx:sceneDb:ambientLightColor" = (0, 0, 0)
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 100
+    metersPerUnit = 0.01
+    startTimeCode = 0
+    timeCodesPerSecond = 60
+    upAxis = "Y"
+)
+
+def Xform "World"
+{
+    def Xform "props"
+    {
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        def "WoodenTable" (
+            customData = {
+                bool physXPlacementModeCollisionAddedByUs = 1
+            }
+            prepend payload = @../../components/WoodenTable/WoodenTable.usd@
+        )
+        {
+            double xformOp:rotateX:unitsResolve = -90
+            double3 xformOp:rotateXYZ = (90, 0, 0)
+            double3 xformOp:scale = (4.400000065565109, 4.000000059604645, 2.2463512420654297)
+            double3 xformOp:scale:unitsResolve = (100, 100, 100)
+            double3 xformOp:translate = (0, 3.3020708255764104, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+
+            over "geo"
+            {
+                over "mesh" (
+                    customData = {
+                    }
+                )
+                {
+                    int primvars:multimatte_id = 5
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-5.930807278051591e-18, 0.10056315654354828, -4.395755084693079e-9)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+
+        def Xform "cutting_board_rig"
+        {
+            double3 xformOp:rotateXYZ = (0, -38, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (10.147058049676014, -7.105427357601002e-15, 2.4413115505031246)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def "CuttingBoardB" (
+                prepend payload = @../../components/CuttingBoardB/CuttingBoardB.usd@
+            )
+            {
+                token visibility = "inherited"
+                double xformOp:rotateX:unitsResolve = -90
+                double3 xformOp:rotateXYZ = (155.84613512664848, 2.842170943040401e-14, 90)
+                double3 xformOp:scale = (1, 1.0000000149011612, 1.1000000163912773)
+                double3 xformOp:scale:unitsResolve = (100, 100, 100)
+                double3 xformOp:translate = (-1.0509295466570803, 54.2832770326291, 19.258798969948)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+
+                over "geo"
+                {
+                    over "mesh"
+                    {
+                        int primvars:multimatte_id = 1
+                    }
+                }
+            }
+
+            def "GrilledTunaMelt_01" (
+                instanceable = false
+                prepend payload = @../../components/GrilledTunaMelt/GrilledTunaMelt.usd@
+            )
+            {
+                double xformOp:rotateX:unitsResolve = -90
+                double3 xformOp:rotateXYZ = (136.2945808150181, 130.83522737189833, 49.753554279348975)
+                double3 xformOp:scale = (0.4, 0.4, 0.4)
+                double3 xformOp:scale:unitsResolve = (100, 100, 100)
+                double3 xformOp:translate = (5.863913667787234, 61.992776967644836, 4.65284467405484)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+
+                over "geo"
+                {
+                    over "mesh"
+                    {
+                        int primvars:multimatte_id = 2
+                    }
+                }
+            }
+
+            def "GrilledTunaMelt" (
+                instanceable = false
+                prepend payload = @../../components/GrilledTunaMelt/GrilledTunaMelt.usd@
+            )
+            {
+                double xformOp:rotateX:unitsResolve = -90
+                double3 xformOp:rotateXYZ = (-90, 39.126132965088004, 180)
+                double3 xformOp:scale = (0.37718304991722107, 0.4241971969604492, 0.4000000059604645)
+                double3 xformOp:scale:unitsResolve = (100, 100, 100)
+                double3 xformOp:translate = (7.397147901311536, 58.62828575435948, 16.007052485188108)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+
+                over "geo"
+                {
+                    over "mesh"
+                    {
+                        int primvars:multimatte_id = 3
+                    }
+                }
+            }
+
+            def "CuttingBoardA" (
+                prepend payload = @../../components/CuttingBoardA/CuttingBoardA.usd@
+            )
+            {
+                token visibility = "invisible"
+                double xformOp:rotateX:unitsResolve = -90
+                double3 xformOp:rotateXYZ = (90, -24.00000000000034, 0)
+                double3 xformOp:scale = (0.800000011920929, 0.9000000134110451, 1.0000000149011612)
+                double3 xformOp:scale:unitsResolve = (100, 100, 100)
+                double3 xformOp:translate = (2.4501501778376493, 53.80980386864987, 13.512970852246653)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+            }
+        }
+
+        def "CokeBottleA" (
+            prepend payload = @../../components/CokeBottleA/CokeBottleA.usd@
+        )
+        {
+            double xformOp:rotateX:unitsResolve = -90
+            double3 xformOp:rotateXYZ = (13.000000312924044, 48.800000727176666, 18.87721684778049)
+            double3 xformOp:scale = (0.7, 0.7, 0.7)
+            double3 xformOp:scale:unitsResolve = (100, 100, 100)
+            double3 xformOp:translate = (-8.243875290619497, 55.63631298548649, 34.85306144078135)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve", "xformOp:scale:unitsResolve"]
+
+            over "geo"
+            {
+                over "mesh"
+                {
+                    int primvars:multimatte_id = 4
+                }
+            }
+        }
+    }
+
+    def Scope "cameras"
+    {
+        def Camera "Camera" (
+            hide_in_stage_window = false
+            no_delete = false
+        )
+        {
+            float4[] clippingPlanes = []
+            float2 clippingRange = (1, 10000000)
+            float exposure = 0
+            float focalLength = 18.147562
+            float focusDistance = 400
+            float fStop = 0
+            float horizontalAperture = 20.955
+            float horizontalApertureOffset = 0
+            custom vector3d omni:kit:centerOfInterest = (-2.800337461753583e-14, 8.426687332563915e-14, -1029.9982960765938)
+            token projection = "perspective"
+            uniform token purpose = "default"
+            double shutter:close = 0
+            double shutter:open = 0
+            uniform token stereoRole = "mono"
+            float verticalAperture = 15.2908
+            float verticalApertureOffset = 0
+            token visibility = "inherited"
+            float3 xformOp:rotateYXZ = (-32.416096, 70.472664, 56.511707)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (28.651638022549722, 113.3193585519819, 44.282114543791984)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYXZ", "xformOp:scale"]
+        }
+    }
+}
+
+def Xform "Environment"
+{
+    int ground:size = 1400
+    string ground:type = "On"
+    double3 xformOp:rotateXYZ = (0, 0, 0)
+    double3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+    def DomeLight "Sky" (
+        prepend apiSchemas = ["ShapingAPI"]
+    )
+    {
+        float inputs:colorTemperature = 6250
+        bool inputs:enableColorTemperature = 1
+        float inputs:exposure = 9
+        float inputs:intensity = 1
+        float inputs:shaping:cone:angle = 180
+        float inputs:shaping:cone:softness
+        float inputs:shaping:focus
+        color3f inputs:shaping:focusTint
+        asset inputs:shaping:ies:file
+        asset inputs:texture:file = @https://omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Scenes/Templates/Default/SubUSDs/textures/CarLight_512x256.hdr@
+        token inputs:texture:format = "latlong"
+        token visibility = "inherited"
+        double3 xformOp:rotateXYZ = (0, -90, -90)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 305, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+    }
+
+    def DistantLight "DistantLight" (
+        prepend apiSchemas = ["ShapingAPI"]
+    )
+    {
+        float inputs:angle = 2.5
+        float inputs:colorTemperature = 7250
+        bool inputs:enableColorTemperature = 1
+        float inputs:exposure = 10
+        float inputs:intensity = 1
+        float inputs:shaping:cone:angle = 180
+        float inputs:shaping:cone:softness
+        float inputs:shaping:focus
+        color3f inputs:shaping:focusTint
+        asset inputs:shaping:ies:file
+        token visibility = "inherited"
+        double3 xformOp:rotateXYZ = (-105, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 305, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "Grid"
+        {
+            token outputs:mdl:displacement.connect = </Environment/Looks/Grid/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Environment/Looks/Grid/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Environment/Looks/Grid/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                float inputs:albedo_add = 0
+                float inputs:albedo_brightness = 0.52
+                float inputs:albedo_desaturation = 1
+                asset inputs:diffuse_texture = @https://omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Scenes/Templates/Default/SubUSDs/textures/ov_uv_grids_basecolor_1024.png@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                )
+                bool inputs:project_uvw = 0
+                float inputs:reflection_roughness_constant = 0.333
+                float inputs:texture_rotate = 0 (
+                    customData = {
+                        float default = 0
+                    }
+                )
+                float2 inputs:texture_scale = (0.5, 0.5) (
+                    customData = {
+                        float2 default = (1, 1)
+                    }
+                )
+                float2 inputs:texture_translate = (0, 0) (
+                    customData = {
+                        float2 default = (0, 0)
+                    }
+                )
+                bool inputs:world_or_object = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+
+    def Mesh "ground" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            bool physXPlacementModeCollisionAddedByUs = 1
+        }
+    )
+    {
+        float3[] extent = [(-1400, -1400, 0), (1400, 1400, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 3, 2]
+        rel material:binding = </Environment/Looks/Grid> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)] (
+            interpolation = "faceVarying"
+        )
+        point3f[] points = [(-700, -700, 0), (700, -700, 0), (-700, 700, 0), (700, 700, 0)]
+        bool primvars:isMatteObject = 0
+        texCoord2f[] primvars:st = [(0, 0), (14, 0), (14, 14), (0, 14)] (
+            interpolation = "faceVarying"
+        )
+        uniform token subdivisionScheme = "none"
+        token visibility = "inherited"
+        double3 xformOp:rotateXYZ = (0, -90, -90)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+    }
+
+    def Plane "groundCollider" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+        customData = {
+        }
+    )
+    {
+        uniform token axis = "Y"
+        uniform token purpose = "guide"
+    }
+}
+

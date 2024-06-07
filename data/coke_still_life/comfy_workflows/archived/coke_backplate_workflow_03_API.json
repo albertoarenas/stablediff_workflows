@@ -1,0 +1,722 @@
+{
+  "1": {
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "23",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "4": {
+    "inputs": {
+      "mask": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "5": {
+    "inputs": {
+      "mask": [
+        "55",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "6": {
+    "inputs": {
+      "mask": [
+        "56",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "8": {
+    "inputs": {
+      "mask_1_strength": 1,
+      "mask_2_strength": 1,
+      "mask_3_strength": 1,
+      "mask_4_strength": 1,
+      "set_cond_area": "default",
+      "positive_1": [
+        "22",
+        0
+      ],
+      "negative_1": [
+        "37",
+        0
+      ],
+      "positive_2": [
+        "29",
+        0
+      ],
+      "negative_2": [
+        "37",
+        0
+      ],
+      "positive_3": [
+        "32",
+        0
+      ],
+      "negative_3": [
+        "37",
+        0
+      ],
+      "positive_4": [
+        "35",
+        0
+      ],
+      "negative_4": [
+        "37",
+        0
+      ],
+      "mask_1": [
+        "53",
+        0
+      ],
+      "mask_2": [
+        "54",
+        0
+      ],
+      "mask_3": [
+        "55",
+        0
+      ],
+      "mask_4": [
+        "56",
+        0
+      ]
+    },
+    "class_type": "ConditioningSetMaskAndCombine4",
+    "_meta": {
+      "title": "ConditioningSetMaskAndCombine4"
+    }
+  },
+  "20": {
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": 3,
+      "steps": 13,
+      "cfg": 3.5,
+      "sampler_name": "dpmpp_2s_ancestral",
+      "scheduler": "karras",
+      "start_at_step": 0,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": "disable",
+      "model": [
+        "52",
+        0
+      ],
+      "positive": [
+        "77",
+        0
+      ],
+      "negative": [
+        "77",
+        1
+      ],
+      "latent_image": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced",
+    "_meta": {
+      "title": "KSampler (Advanced)"
+    }
+  },
+  "22": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 512,
+      "target_height": 512,
+      "text_g": [
+        "24",
+        0
+      ],
+      "text_l": [
+        "24",
+        0
+      ],
+      "clip": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncodeSDXL",
+    "_meta": {
+      "title": "CLIPTextEncodeSDXL"
+    }
+  },
+  "23": {
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "24": {
+    "inputs": {
+      "text1": "(masterpiece), cinematic, best quality, 8k, high detail, photography, majestic, overwhelming, octane rendering, award winning, 35mm film movie still, ultra photorealistic, photorealism, sharp focus,  photo booth",
+      "text2": "A classic glass Coca-Cola bottle filled with dark soda, featuring the iconic red label with white text.",
+      "separator": ","
+    },
+    "class_type": "Concat Text _O",
+    "_meta": {
+      "title": "Concat Text _O"
+    }
+  },
+  "27": {
+    "inputs": {
+      "text1": "(masterpiece), cinematic, best quality, 8k, high detail, photography, majestic, overwhelming, octane rendering, award winning, 35mm film movie still, ultra photorealistic, photorealism, sharp focus,  photo booth",
+      "text2": "A dark, rustic wooden table surface with visible grain and textur",
+      "separator": ","
+    },
+    "class_type": "Concat Text _O",
+    "_meta": {
+      "title": "Concat Text _O"
+    }
+  },
+  "29": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 512,
+      "target_height": 512,
+      "text_g": [
+        "27",
+        0
+      ],
+      "text_l": [
+        "27",
+        0
+      ],
+      "clip": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncodeSDXL",
+    "_meta": {
+      "title": "CLIPTextEncodeSDXL"
+    }
+  },
+  "31": {
+    "inputs": {
+      "text1": "(masterpiece), cinematic, best quality, 8k, high detail, photography, majestic, overwhelming, octane rendering, award winning, 35mm film movie still, ultra photorealistic, photorealism, sharp focus,  photo booth",
+      "text2": "A wooden cutting board with a handle, showcasing the natural grain and texture of the wood.",
+      "separator": ","
+    },
+    "class_type": "Concat Text _O",
+    "_meta": {
+      "title": "Concat Text _O"
+    }
+  },
+  "32": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 512,
+      "target_height": 512,
+      "text_g": [
+        "31",
+        0
+      ],
+      "text_l": [
+        "31",
+        0
+      ],
+      "clip": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncodeSDXL",
+    "_meta": {
+      "title": "CLIPTextEncodeSDXL"
+    }
+  },
+  "34": {
+    "inputs": {
+      "text1": "(masterpiece), cinematic, best quality, 8k, high detail, photography, majestic, overwhelming, octane rendering, award winning, 35mm film movie still, ultra photorealistic, photorealism, sharp focus,  photo booth",
+      "text2": "A toasted tuna melt sandwich cut into two triangles, filled with tuna salad, melted cheese.",
+      "separator": ","
+    },
+    "class_type": "Concat Text _O",
+    "_meta": {
+      "title": "Concat Text _O"
+    }
+  },
+  "35": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 512,
+      "target_height": 512,
+      "text_g": [
+        "34",
+        0
+      ],
+      "text_l": [
+        "34",
+        0
+      ],
+      "clip": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncodeSDXL",
+    "_meta": {
+      "title": "CLIPTextEncodeSDXL"
+    }
+  },
+  "37": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 512,
+      "target_height": 512,
+      "text_g": "text, watermark, uniform, patterns, underexposed, ugly, dark, night, oversaturated, high contrast, jpeg, (worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, photography, bad art:1.4), (font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), cropped, out of frame, cut off, jpeg artifacts, out of focus, glitch, duplicate, (amateur:1.3), merging, clipping, nsfw, naked",
+      "text_l": "text, watermark, uniform, patterns, underexposed, ugly, dark, night, oversaturated, high contrast, jpeg, (worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, photography, bad art:1.4), (font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), cropped, out of frame, cut off, jpeg artifacts, out of focus, glitch, duplicate, (amateur:1.3), merging, clipping, nsfw, naked",
+      "clip": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncodeSDXL",
+    "_meta": {
+      "title": "CLIPTextEncodeSDXL"
+    }
+  },
+  "48": {
+    "inputs": {
+      "mask_color": "#00B2FF",
+      "strength": 1,
+      "set_cond_area": "default",
+      "prompt": "LEAVE EMPTY",
+      "clip": [
+        "65",
+        0
+      ],
+      "color_mask": [
+        "96",
+        0
+      ]
+    },
+    "class_type": "RegionalConditioningColorMask //Inspire",
+    "_meta": {
+      "title": "Regional Conditioning By Color Mask (Inspire)"
+    }
+  },
+  "49": {
+    "inputs": {
+      "mask_color": "#FF9000",
+      "strength": 1,
+      "set_cond_area": "default",
+      "prompt": "LEAVE EMPTY",
+      "clip": [
+        "65",
+        0
+      ],
+      "color_mask": [
+        "96",
+        0
+      ]
+    },
+    "class_type": "RegionalConditioningColorMask //Inspire",
+    "_meta": {
+      "title": "Regional Conditioning By Color Mask (Inspire)"
+    }
+  },
+  "50": {
+    "inputs": {
+      "mask_color": "#EC00FF",
+      "strength": 1,
+      "set_cond_area": "default",
+      "prompt": "LEAVE EMPTY",
+      "clip": [
+        "65",
+        0
+      ],
+      "color_mask": [
+        "96",
+        0
+      ]
+    },
+    "class_type": "RegionalConditioningColorMask //Inspire",
+    "_meta": {
+      "title": "Regional Conditioning By Color Mask (Inspire)"
+    }
+  },
+  "51": {
+    "inputs": {
+      "mask_color": "#05FF04",
+      "strength": 1,
+      "set_cond_area": "default",
+      "prompt": "LEAVE EMPTY",
+      "clip": [
+        "65",
+        0
+      ],
+      "color_mask": [
+        "96",
+        0
+      ]
+    },
+    "class_type": "RegionalConditioningColorMask //Inspire",
+    "_meta": {
+      "title": "Regional Conditioning By Color Mask (Inspire)"
+    }
+  },
+  "52": {
+    "inputs": {
+      "ckpt_name": "wildcardxXLTURBO_wildcardxXLTURBOV10.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "53": {
+    "inputs": {
+      "kernel_size": 5,
+      "sigma": 5,
+      "mask": [
+        "48",
+        1
+      ]
+    },
+    "class_type": "ImpactGaussianBlurMask",
+    "_meta": {
+      "title": "Gaussian Blur Mask"
+    }
+  },
+  "54": {
+    "inputs": {
+      "kernel_size": 5,
+      "sigma": 5,
+      "mask": [
+        "49",
+        1
+      ]
+    },
+    "class_type": "ImpactGaussianBlurMask",
+    "_meta": {
+      "title": "Gaussian Blur Mask"
+    }
+  },
+  "55": {
+    "inputs": {
+      "kernel_size": 5,
+      "sigma": 5,
+      "mask": [
+        "50",
+        1
+      ]
+    },
+    "class_type": "ImpactGaussianBlurMask",
+    "_meta": {
+      "title": "Gaussian Blur Mask"
+    }
+  },
+  "56": {
+    "inputs": {
+      "kernel_size": 5,
+      "sigma": 5,
+      "mask": [
+        "51",
+        1
+      ]
+    },
+    "class_type": "ImpactGaussianBlurMask",
+    "_meta": {
+      "title": "Gaussian Blur Mask"
+    }
+  },
+  "61": {
+    "inputs": {
+      "control_net_name": "sdxl\\sai_xl_depth_256lora.safetensors"
+    },
+    "class_type": "ControlNetLoaderAdvanced",
+    "_meta": {
+      "title": "Load Advanced ControlNet Model 🛂🅐🅒🅝"
+    }
+  },
+  "62": {
+    "inputs": {
+      "strength": 0.86,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "8",
+        0
+      ],
+      "negative": [
+        "37",
+        0
+      ],
+      "control_net": [
+        "61",
+        0
+      ],
+      "image": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "ACN_AdvancedControlNetApply",
+    "_meta": {
+      "title": "Apply Advanced ControlNet 🛂🅐🅒🅝"
+    }
+  },
+  "64": {
+    "inputs": {
+      "mask": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "65": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "52",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer",
+    "_meta": {
+      "title": "CLIP Set Last Layer"
+    }
+  },
+  "76": {
+    "inputs": {
+      "control_net_name": "sdxl\\sai_xl_canny_256lora.safetensors"
+    },
+    "class_type": "ControlNetLoaderAdvanced",
+    "_meta": {
+      "title": "Load Advanced ControlNet Model 🛂🅐🅒🅝"
+    }
+  },
+  "77": {
+    "inputs": {
+      "strength": 0.45,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "62",
+        0
+      ],
+      "negative": [
+        "62",
+        1
+      ],
+      "control_net": [
+        "76",
+        0
+      ],
+      "image": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "ACN_AdvancedControlNetApply",
+    "_meta": {
+      "title": "Apply Advanced ControlNet 🛂🅐🅒🅝"
+    }
+  },
+  "95": {
+    "inputs": {
+      "width": [
+        "127",
+        0
+      ],
+      "height": [
+        "128",
+        0
+      ],
+      "batch_size": 4
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "96": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "width": [
+        "127",
+        0
+      ],
+      "height": [
+        "128",
+        0
+      ],
+      "crop": "disabled",
+      "image": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
+    }
+  },
+  "99": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "width": [
+        "127",
+        0
+      ],
+      "height": [
+        "128",
+        0
+      ],
+      "crop": "disabled",
+      "image": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
+    }
+  },
+  "100": {
+    "inputs": {
+      "image": "MattePass0000.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "101": {
+    "inputs": {
+      "image": "EdgesPass0000.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "102": {
+    "inputs": {
+      "image": "DepthPass0000.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "103": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "width": [
+        "127",
+        0
+      ],
+      "height": [
+        "128",
+        0
+      ],
+      "crop": "disabled",
+      "image": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
+    }
+  },
+  "104": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "127": {
+    "inputs": {
+      "Value": 1152
+    },
+    "class_type": "DF_Integer",
+    "_meta": {
+      "title": "Width"
+    }
+  },
+  "128": {
+    "inputs": {
+      "Value": 648
+    },
+    "class_type": "DF_Integer",
+    "_meta": {
+      "title": "Height"
+    }
+  },
+  "136": {
+    "inputs": {
+      "text1": "(masterpiece), cinematic, best quality, 8k, high detail, photography, majestic, overwhelming, octane rendering, award winning, 35mm film movie still, ultra photorealistic, photorealism, sharp focus,  photo booth",
+      "text2": "A toasted tuna melt sandwich cut into two triangles, filled with tuna salad, melted cheese.",
+      "separator": ","
+    },
+    "class_type": "Concat Text _O",
+    "_meta": {
+      "title": "Concat Text _O"
+    }
+  }
+}
